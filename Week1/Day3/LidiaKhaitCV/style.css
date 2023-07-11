@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    /* border: 1px solid red */
+}
+
+body {
+    background-color: #77696928;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+span {
+    font-style: italic;
+}
+
+h2,
+h3 {
+    font-size: larger;
+}
+
+#small {
+    border-radius: 50%;
+    width: 3vw;
+}
+
+header,
+footer {
+    padding: 1vw;
+    background-color: #b38686;
+    height: max-content;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-between;
+}
+
+#nav_left {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_right {
+    width: 55%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr) 1.5fr;
+    grid-template-rows: minmax(auto, 1em);
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    margin: 0 1vw;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1vw;
+}
+
+#me {
+    width: 20%;
+    margin: 2vw;
+}
+
+#what_i_do {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+
+#do_title {
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+    grid-column: 1 /span 2;
+    grid-row: 1 /span 1;
+}
+
+.items {
+    margin: 1vw;
+    padding: 2vw;
+    text-align: justify;
+    justify-items: center;
+}
+
+.title {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.my_images {
+    padding: 0.1vw;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* why this element don't want to be a center?  */
+#what_i_do .items:last-child .my_images:last-child {
+    width: 35%;
+}
+
+/* =================================================== */
+
+#what_i_do img {
+    width: 100%;
+    margin: 1vw;
+    object-fit: cover;
+}
+
+.left img:hover {
+    cursor: zoom-in;
+    translate: 30% -10%;
+    transform: scale(2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.right img:hover {
+    cursor: zoom-in;
+    translate: -30% 10%;
+    transform: scale(2);
+    transition: transform 0.5s ease-in-out;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 1vw 5vw;
+    font-size: larger;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin: 1vw;
+}
+
+#form_title {
+    grid-column: 1 /span 2;
+}
+
+label,
+input,
+#subject {
+    margin: 1vw;
+}
+
+#submit {
+    grid-column: 2 /span 1;
+    border-radius: 2vw;
+    margin: 0 5vw;
+}
+
+#submit:hover {
+    background-color: #b38686;
+    border-radius: 2vw;
+    color: #fff;
+    cursor: pointer;
+}
