@@ -1,0 +1,1 @@
+print(f"{'Hello world'}\n"*4 + f"{'I love python'}\n"*4)
