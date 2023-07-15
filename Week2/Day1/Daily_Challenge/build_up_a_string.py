@@ -1,3 +1,4 @@
+import random
 
 while True:
     string = input("Enter a string (must be 10 characters long): ")
@@ -17,3 +18,9 @@ new_string = ""
 for l in string:
     new_string += l
     print(new_string)
+
+#bonus
+list_string = list(string)
+random.shuffle(list_string) 
+
+print("Jumbled string: {}".format("".join(list_string)))
