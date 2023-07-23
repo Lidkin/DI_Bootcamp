@@ -34,7 +34,8 @@ def game_positions():
         position_dict[num] = index
         num += 1
     return position_dict
-
+    
+used_position = []
 def player_input(player, position_dict):
     color_reset = '\033[0m'  # Reset color to default
     color_red = '\033[31m'  # Red text
@@ -45,8 +46,11 @@ def player_input(player, position_dict):
         player = color_green + "O" + color_reset
 
     position = int(input(f'{player}, please choose a position from 1-9: '))
+    while position in used_position:
+        position = int(input(f'position {position} is already occupied. Please choose another: '))
+    used_position.append(position)    
     board_position = position_dict[position]
-    game_board[board_position[0]][board_position[1]] = player    
+    game_board[board_position[0]][board_position[1]] = player          
        
                   
 def game_player():
@@ -109,7 +113,3 @@ def play():
             steps +=1                         
 
 play()    
-  
-    
-    
-
