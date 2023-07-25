@@ -9,11 +9,11 @@ def translator(french_words) :
     print (fr_en_dict)    
 
 def google_translator(french_words):
-        fr_en_dict = {}
-        translations = Translator().translate(french_words, dest='en', src='fr')
-        for translation in translations:
-           fr_en_dict[translation.origin] = translation.text
-        print(fr_en_dict)   
+    fr_en_dict = {}
+    translations = Translator().translate(french_words, dest='en', src='fr')
+    for translation in translations:
+        fr_en_dict[translation.origin] = translation.text
+    print(fr_en_dict)   
 
 french_words= ["Bonjour", "Au revoir", "Bienvenue", "A bientôt"] 
 translator(french_words)
