@@ -74,6 +74,4 @@ print(circle3 + circle4)
 print(circle1 > circle3)
 print(circle3 == circle4)
 
-Circle.draw()
-
-        
+Circle.draw()        
