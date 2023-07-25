@@ -1,0 +1,28 @@
+<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 39.06C0 34.3474 0 31.991 0.710116 30.1118C1.82627 27.158 4.15797 24.8263 7.11178 23.7101C8.99104 23 11.3474 23 16.06 23H23V46H0L0 39.06Z" fill="url(#paint0_angular_1_19)"/>
+<path d="M39.06 46C34.3474 46 31.991 46 30.1118 45.2899C27.158 44.1737 24.8263 41.842 23.7101 38.8882C23 37.009 23 34.6526 23 29.94V23H46V46H39.06Z" fill="url(#paint1_angular_1_19)"/>
+<path d="M6.94 0C11.6526 0 14.009 0 15.8882 0.710116C18.842 1.82627 21.1737 4.15797 22.2899 7.11178C23 8.99104 23 11.3474 23 16.06V23H0V0L6.94 0Z" fill="url(#paint2_angular_1_19)"/>
+<path d="M46 11.5C46 11.9642 46 12.1964 45.993 12.3926C45.787 18.1596 41.1596 22.787 35.3926 22.993C35.1964 23 34.9642 23 34.5 23V23C34.0358 23 33.8036 23 33.6074 22.993C27.8404 22.787 23.213 18.1596 23.007 12.3926C23 12.1964 23 11.9642 23 11.5L23 0L46 0V11.5Z" fill="url(#paint3_angular_1_19)"/>
+<defs>
+<radialGradient id="paint0_angular_1_19" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.6379 48.5556) rotate(-10.1491) scale(14.5028 16.6617)">
+<stop stop-color="#544646" stop-opacity="0.84"/>
+<stop offset="0.60574" stop-color="#5A3C3C" stop-opacity="0.907333"/>
+<stop offset="1" stop-color="#593232" stop-opacity="0.94"/>
+</radialGradient>
+<radialGradient id="paint1_angular_1_19" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(48.5556 27.3621) rotate(-100.149) scale(14.5028 16.6617)">
+<stop stop-color="#544646" stop-opacity="0.84"/>
+<stop offset="0.60574" stop-color="#5A3C3C" stop-opacity="0.907333"/>
+<stop offset="1" stop-color="#593232" stop-opacity="0.94"/>
+</radialGradient>
+<radialGradient id="paint2_angular_1_19" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-2.55556 18.6379) rotate(79.8509) scale(14.5028 16.6617)">
+<stop stop-color="#544646" stop-opacity="0.81"/>
+<stop offset="0.60574" stop-color="#5A3C3C" stop-opacity="0.907333"/>
+<stop offset="1" stop-color="#612C2C" stop-opacity="0.94"/>
+</radialGradient>
+<radialGradient id="paint3_angular_1_19" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(27.3621 -2.55556) rotate(169.851) scale(14.5028 16.6617)">
+<stop stop-color="#544646" stop-opacity="0.9"/>
+<stop offset="0.60574" stop-color="#5A3C3C" stop-opacity="0.907333"/>
+<stop offset="1" stop-color="#760F0F" stop-opacity="0.94"/>
+</radialGradient>
+</defs>
+</svg>
