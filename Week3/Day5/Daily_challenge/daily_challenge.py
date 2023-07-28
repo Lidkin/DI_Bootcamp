@@ -1,6 +1,5 @@
 import requests
 import time
-import sys
 
 url1 = 'https://google.com'
 url2 = 'https://yahoo.com'
@@ -8,8 +7,11 @@ url3 = 'https://github.com'
 url4 = 'https://python.org'
 url5 = 'https://pypi.org'
 url_list = [url1, url2, url3, url4, url5]
-color = '\033[91m'
+red = '\033[91m'
 reset = '\033[0m'
+green = '\033[92m'
+blue = '\033[94m'
+color = red
 
 def get_time():
     for url in url_list:
@@ -17,7 +19,7 @@ def get_time():
         r = requests.get(url)
         status = r.status_code
         if status == 200:
-            color = '\033[92m'    
+            color = green    
         end_time = time.time()
         print(f"{url[8:]} took {end_time - start_time:.2f} seconds to load with status code {color}{status}{reset}")
 
@@ -81,14 +83,14 @@ class Deck:
         if self.cards:
             return self.cards.pop() 
         else:
-            print("No cards left in the deck!")         
+            print(red + "No cards left in the deck!" + reset)         
 
 deck = Deck()
 for _ in range(5):
-    print(len(deck.cards))
+    print('Cards in deck: ' + green + str(len(deck.cards)) + reset)
     deck.shuffle()
-    print(deck.cards[:5])
-    print(deck.deal())
+    print(', '.join(deck.cards[:5]))
+    print(blue + deck.deal() + reset)
 print("++++++++++++++++++++++")
 deck2 = Deck()
 for _ in range(53):
