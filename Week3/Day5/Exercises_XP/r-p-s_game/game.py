@@ -2,6 +2,9 @@ from random import choice
 
 class Game:
     choice_list = ["rock", "paper", "scissors"]
+    red = '\033[91m'
+    green = '\033[92m'
+    reset = '\033[0m'
 
     def __init__ (self):
        self.result = {'draw' : 0, "win" : 0, "loss" : 0}    
@@ -26,10 +29,13 @@ class Game:
     def get_game_result(self, user, computer):
         if user == computer:
             self.result['draw'] += 1 
+            print(f"Draw")
         elif (user == 's' and  computer == 'p') or (user == 'p' and computer == 'r') or (user == 'r' and computer == 's') :
             self.result['win'] += 1 
+            print(f"{Game.green}You win{Game.reset}")
         else:
             self.result['loss'] += 1  
+            print(f"{Game.red}You loss{Game.reset}")
         return self.result                   
 
     def play(self):
