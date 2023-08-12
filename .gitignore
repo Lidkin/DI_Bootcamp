@@ -1,5 +1,6 @@
 in_class/
-Week4/Day2/Ecercises_XP/dvdrental.tar
+__pycache__/
+dvdrental.tar
 big_O/
-Week5/Day4/Exercises_XP/animal-info/env/
-Week5/Day4/Daily_challenge/people_project/env/
+env/
+people_project/env/
