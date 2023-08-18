@@ -3,18 +3,17 @@ from django.http import JsonResponse, HttpRequest
 from django.views.decorators.csrf import csrf_exempt
 from .models import Book
 import json
-# Create your views he.:
+from django.forms.models import model_to_dict 
 
 def list_books(request):
     books = Book.objects.all()
-    book_data = [{'id': book.id, 'title': book.title, 'author': book.author, 'published_date': book.published_date} for book in books]
-    return JsonResponse({'books': book_data})
+    books_dict = [model_to_dict(book) for book in books]
+    return JsonResponse({'books': books_dict})
 
-def book_detail(request, id):
+def book_detail(request, id:int):
     try:
-        book = Book.objects.get(id=id)
-        book_data = {'title': book.title, 'author': book.author, 'published_date': book.published_date, 'description': book.description, 'categories': book.categories}
-        return JsonResponse({'book': book_data})
+        book = Book.objects.get(pk=id)
+        return JsonResponse({'A Book': model_to_dict(book)}) 
     except Book.DoesNotExist:
         return JsonResponse({'error': 'Book not found'}, status=404)
 
