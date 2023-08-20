@@ -2,18 +2,18 @@ console.log('Exercise 1:')
 
 function displayNumbersDivisible(divisor) {
     let numbers = []
-    let div_numbers = []
+    let divNumbers = []
     var sum = 0
     for (let i = 0; i < 501; i++) {
         numbers.push(i)
     }
     numbers.forEach(number => {
         if (number % divisor == 0) {
-            div_numbers.push(number)
+            divNumbers.push(number)
             sum += number
         }
     });
-    console.log(`Outcome : ${div_numbers.join(' ')} `)
+    console.log(`Outcome : ${divNumbers.join(' ')} `)
     console.log(`Sum : ${sum}`)
 }
 
@@ -117,10 +117,10 @@ function totalVacationCost() {
         }
 
     }
-    const div_vac = document.querySelector('div')
+    const divVac = document.querySelector('div')
     const myTravel = document.createElement('h1')
     myTravel.innerText = `The car cost: ${carCost}, the hotel cost: ${hotel}, the plane tickets cost: ${planeCost}. Total cost: ${totalCost}`
-    div_vac.append(myTravel)
+    divVac.append(myTravel)
 
 }
 
@@ -158,16 +158,16 @@ const name2 = ulList[1].firstElementChild.nextElementSibling.innerText
 
 console.log('Exercise 6:--------------------------')
 
-const div_nav = document.getElementById('navBar')
-div_nav.setAttribute('id', 'socialNetworkNavigation')
-console.log(div_nav.id)
+const divNav = document.getElementById('navBar')
+divNav.setAttribute('id', 'socialNetworkNavigation')
+console.log(divNav.id)
 
 const newLi = document.createElement('li')
 newLi.innerHTML = '<a href="#">Logout</a>'
-div_nav.firstElementChild.appendChild(newLi)
+divNav.firstElementChild.appendChild(newLi)
 
-console.log(div_nav.firstElementChild.firstElementChild.textContent)
-console.log(div_nav.firstElementChild.lastElementChild.textContent)
+console.log(divNav.firstElementChild.firstElementChild.textContent)
+console.log(divNav.firstElementChild.lastElementChild.textContent)
 
 console.log('Exercise 7:--------------------------')
 
@@ -191,17 +191,17 @@ book3 = {
 }
 
 const allBooks = [book1, book2, book3]
-const section_book = document.getElementsByClassName('listBooks')[0]
+const sectionBook = document.getElementsByClassName('listBooks')[0]
 
 for (book of allBooks) {
-    const div_book = document.createElement('div');
+    const divBook = document.createElement('div');
     const text = document.createElement('h2');
     text.innerText = `${book.title} written by ${book.author}`
     const image = document.createElement('img');
     image.setAttribute('src', `${book.image}`);
     image.style.width = '100px'
-    div_book.appendChild(text);
-    div_book.appendChild(image)
-    if (book.alreadyRead) div_book.style.color = 'red'
-    section_book.appendChild(div_book)
+    divBook.appendChild(text);
+    divBook.appendChild(image)
+    if (book.alreadyRead) divBook.style.color = 'red'
+    sectionBook.appendChild(divBook)
 }
