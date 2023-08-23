@@ -19,12 +19,15 @@ const cloneGroceries = () => {
 
     console.log(user, client);
     console.log(groceries);
+    const groceriesClone = { ...groceries };
+    const shoppingClone = Object.assign({}, groceries);
 
     const shopping = groceries;
     shopping.totalPrice = '35$';
     shopping.other.paid = false;
 
-    console.log(groceries, shopping);
+    console.log('grocClone ->', groceriesClone, shoppingClone);
+    console.log('Pass By Reference ->', groceries, shopping);
 };
 
 cloneGroceries();
