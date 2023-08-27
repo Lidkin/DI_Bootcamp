@@ -52,7 +52,7 @@ class Dog {
     }
 };
 
-// 3
+// 2
 class Labrador extends Dog {
     constructor(size) {
         super(nameD);
@@ -60,7 +60,9 @@ class Labrador extends Dog {
     }
 };
 
-console.log('my answer - #3')
+console.log(new Labrador('Lala',10))
+
+console.log('my answer - #2')
 
 console.log('-----Exercise 6 : Challenges-----')
 
