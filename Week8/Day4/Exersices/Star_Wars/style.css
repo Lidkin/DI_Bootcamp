@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    background-image: url("https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp");
+    font-family: 'Helvetica Neue';
+    color: yellow;
+    text-align: center;
+}
+
+.logo {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/420px-Star_Wars_Logo.svg.png") center center no-repeat;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+ } 
+
+#info {
+    border: 3px solid yellow;
+    border-radius: 15px;
+    width: 600px;
+    height: 250px;
+    margin: 0 auto;
+    color: white;
+    padding: 20px;
+}
+
+p{
+    font-size: 40px;
+}
+
+.p {
+    font-size: 30px;
+    margin: -25px 0;
+}
+
+i{
+    margin: 100px;
+}
+
+button {
+    margin-top: 20px;
+
+    border: 3px solid yellow;
+    border-radius: 10px;
+
+    width: 180px;
+    height: 40px;
+
+    font-weight: bold;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
