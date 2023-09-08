@@ -1,0 +1,12 @@
+{
+  "name": "exercise3",
+  "version": "1.0.0",
+  "description": "exercises w9d2",
+  "main": "fileManager.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lidia Khait",
+  "license": "ISC"
+}

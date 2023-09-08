@@ -1,0 +1,12 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "exersices w9d2",
+  "main": "shop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lidia Khait",
+  "license": "ISC",
+  "type": "commonjs"
+}
