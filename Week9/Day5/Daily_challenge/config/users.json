@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "firstname": "Laura",
+    "lastname": "Shtern-Berger",
+    "email": "lsb@gmail.com",
+    "username": "laura",
+    "password": "$2b$10$cuzsxqiSvc6ASgBHJbcZ0.XtrZr9E5izqAPEh.nwYEdyjDtVC67v6"
+  },
+  {
+    "id": 2,
+    "firstname": "Marie",
+    "lastname": "Kuri",
+    "email": "mk@google.com",
+    "username": "radiomari",
+    "password": "$2b$10$p/1ET2cLvHPHQZUB26Jj4ePKRXqGwUxQ3LzRaR.MMrgnY6I2qRvka"
+  }
+]
