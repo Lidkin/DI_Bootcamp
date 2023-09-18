@@ -52,9 +52,9 @@ const Game = (props) => {
             </header>
             <article>Get points by clicking on an image but don't click on any more than once!</article>
             <div className='grid-container'>
-                {cards.map((card, indx) => {
+                {cards.map((card) => {
                     return (
-                        <div className='card' id={card.id} key={indx} >
+                        <div className='card' id={card.id} key={card.id} >
                             <img onClick={(e) => clickCard(e)} src={card.image} />
                             <p><span>Name: </span>{card.name}</p>
                             <p><span>Occupation: </span>{card.occupation}</p>
